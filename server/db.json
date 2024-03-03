@@ -1,0 +1,80 @@
+{
+  "newsletter": {
+    "title": "Sign Up NOW!",
+    "description": "Be the first to know about our exclusive deals, new product launches, and special events! Join our community today and enjoy a special welcome discount on your next purchase. Plus, get insider tips, style inspiration, and more delivered straight to your inbox. Don't miss out on the action – sign up now and take the first step towards unlocking all the perks and benefits our subscribers enjoy. Your next great find is just an email away!"
+  },
+  "products": [
+    {
+      "id": "1",
+      "title": "Headphones",
+      "cost": 50,
+      "description": "Dive into the realm of crystal-clear audio with our Headphones. Perfect for music lovers seeking a blend of comfort and quality.",
+      "url": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "2",
+      "title": "SmartWatch",
+      "cost": 200,
+      "description": "Elevate your day with our SmartWatch. Track fitness, receive notifications, and stay connected, all from your wrist.",
+      "url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1999&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "3",
+      "title": "HeadPhones",
+      "cost": 45,
+      "description": "Experience audio nirvana with our sleek HeadPhones, designed for those who appreciate both style and sound.",
+      "url": "https://plus.unsplash.com/premium_photo-1679913792906-13ccc5c84d44?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "4",
+      "title": "Tech Plant",
+      "cost": 100,
+      "description": "Unbox the unexpected with our Surprise Box. A treasure trove of handpicked goodies waiting to delight you.",
+      "url": "https://images.unsplash.com/photo-1485955900006-10f4d324d411?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    }
+  ],
+  "dealOfTheWeek": {
+    "id": "2", "title": "SmartWatch", "cost": 200,
+    "promoCost": 159,
+    "description": "Elevate your day with our SmartWatch. Track fitness, receive notifications, and stay connected, all from your wrist.",
+    "url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1999&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  "news": [
+    {
+      "id": "n1",
+      "title": "Spring Sale Extravaganza!",
+      "date": "2024-03-20",
+      "description": "Celebrate the arrival of spring with up to 50% off on select items! Refresh your gear for the new season."
+    },
+    {
+      "id": "n2",
+      "title": "New Product Launch: Eco-Friendly Water Bottles",
+      "date": "2024-04-01",
+      "description": "Stay hydrated in style while helping the planet. Check out our latest line of eco-friendly water bottles."
+    },
+    {
+      "id": "n3",
+      "title": "Tech Week: Discover the Latest in Wearable Tech",
+      "date": "2024-04-15",
+      "description": "Join us for Tech Week and get a first look at the latest innovations in wearable technology."
+    },
+    {
+      "id": "n4",
+      "title": "Customer Appreciation Day",
+      "date": "2024-05-05",
+      "description": "We're saying thank you to our amazing customers with exclusive deals and surprises in-store and online!"
+    },
+    {
+      "id": "n5",
+      "title": "Back-to-School Bonanza",
+      "date": "2024-08-10",
+      "description": "Gear up for school with our Back-to-School Bonanza! Amazing discounts on backpacks, stationery, and tech gadgets."
+    },
+    {
+      "id": "n6",
+      "title": "Black Friday",
+      "date": "2024-08-10",
+      "description": "Gear up for school with our Back-to-School Bonanza! Amazing discounts on backpacks, stationery, and tech gadgets."
+    }
+  ]
+}
