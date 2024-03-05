@@ -4,7 +4,6 @@ import { NavLink } from 'react-router-dom';
 import { RootState } from '../App.tsx';
 
 export function Navbar () {
-  // NEW
   const cartItems = useSelector((state: RootState) => state.cart)
 
   return (
@@ -16,8 +15,9 @@ export function Navbar () {
         </NavLink>
       </div>
       <div className="flex-none">
-        {/*NEW*/}
         <NavLink to="/shop" className="btn">Shop</NavLink>
+        {/*NEW*/}
+        <NavLink to="/cms" className="btn">CMS</NavLink>
 
         <div className="dropdown dropdown-end">
           <div role="button" className="btn btn-ghost btn-circle">

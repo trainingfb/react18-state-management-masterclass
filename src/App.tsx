@@ -5,16 +5,21 @@ import { Outlet } from 'react-router-dom';
 import { Navbar } from './core/Navbar.tsx';
 import { productApi } from './core/store/product.api.ts';
 import { shopCartStore } from './core/store/shop-cart.store.ts';
+import { productCMSApi } from './pages/cms/api/productCMS.api.ts';
 
 const rootReducer = combineReducers({
   cart: shopCartStore.reducer,
   products: productApi.reducer,
+  productsCMS: productCMSApi.reducer,
 });
 
 export const store = configureStore({
   reducer: rootReducer,
   middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat( productApi.middleware )
+    getDefaultMiddleware().concat(
+      productApi.middleware,
+      productCMSApi.middleware
+    )
 
 });
 
