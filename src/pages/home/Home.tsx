@@ -26,7 +26,6 @@ export async function getData(): Promise<HomePageData> {
 }
 
 
-
 export default function Home () {
   const [data, setData] = useState<HomePageData | null>(null)
   const [error, setError] = useState<boolean>(false)
