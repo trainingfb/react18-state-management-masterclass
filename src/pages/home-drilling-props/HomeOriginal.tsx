@@ -1,5 +1,7 @@
 // /src/pages/home/Home.tsx
 
+import * as React from 'react';
+import { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { DealOfTheWeek, News, Newsletter, Product } from '../../model/shop-types.ts';
 
@@ -12,6 +14,17 @@ export type HomePageData = {
 
 export default function HomeOriginal () {
   const data = useLoaderData() as HomePageData;
+
+  // NEW
+  const [email, setEmail] = useState('')
+
+  // NEW
+  function subscribeNewsletter(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault()
+    // http call
+    console.log('subscribe', email)
+    setEmail('')
+  }
 
   return <div>
 
@@ -67,12 +80,19 @@ export default function HomeOriginal () {
           </div>
           <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
             {/*Newsletter form*/}
-            <form className="card-body">
+            <form className="card-body" onSubmit={subscribeNewsletter}>
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Email</span>
                 </label>
-                <input type="email" placeholder="Your email address" className="input input-bordered" required/>
+
+                {/*NEW*/}
+                <input
+                  type="email"
+                  value={email}
+                  onChange={e => setEmail(e.currentTarget.value)}
+                  placeholder="Your email address" className="input input-bordered" required
+                />
               </div>
 
               <div className="form-control mt-6">

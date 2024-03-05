@@ -5,7 +5,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App.tsx'
 import './index.css'
 import Cms from './pages/cms/Cms.tsx';
-import HomeOriginal, { HomePageData } from './pages/home/HomeOriginal.tsx';
+import HomeDrillingProps from './pages/home-drilling-props/Home.tsx';
+import Home, { HomePageData } from './pages/home/Home.tsx';
 import Shop from './pages/shop/Shop.tsx';
 
 
@@ -32,7 +33,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <HomeOriginal />,
+        element: <Home />,
         // NEW
         loader: async () => {
           return await getData()
@@ -40,7 +41,16 @@ const router = createBrowserRouter([
         // NEW
         errorElement: <div>Server Error</div>
       },
-
+      {
+        path: '/home-drilling-props',
+        element: <HomeDrillingProps />,
+        // NEW
+        loader: async () => {
+          return await getData()
+        },
+        // NEW
+        errorElement: <div>Server Error</div>
+      },
       {
         path: "shop",
         element: <Shop />,
