@@ -34,22 +34,6 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home />,
-        // NEW
-        loader: async () => {
-          return await getData()
-        },
-        // NEW
-        errorElement: <div>Server Error</div>
-      },
-      {
-        path: '/home-drilling-props',
-        element: <HomeDrillingProps />,
-        // NEW
-        loader: async () => {
-          return await getData()
-        },
-        // NEW
-        errorElement: <div>Server Error</div>
       },
       {
         path: "shop",

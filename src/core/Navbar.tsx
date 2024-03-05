@@ -1,10 +1,7 @@
 // src/core/NavBar.tsx
-import { useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
-import { RootState } from '../App.tsx';
 
 export function Navbar () {
-  const cartItems = useSelector((state: RootState) => state.cart)
 
   return (
     <div className="navbar bg-base-100">
@@ -29,7 +26,7 @@ export function Navbar () {
               </svg>
 
               <div className="flex items-center">
-                <span className="badge badge-sm indicator-item">{cartItems.length}</span>
+                <span className="badge badge-sm indicator-item">10</span>
               </div>
             </div>
           </div>
