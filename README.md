@@ -9,7 +9,6 @@ Source code for the master class "State Management in React", a quick overview a
 * Global State Management con Zustand
 * Global State Management con Redux Toolkit
 * React Router e loader API
-* Panoramica su TanStack Query
 
 ## Run Project
 
