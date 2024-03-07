@@ -33,10 +33,6 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home />,
-        loader: async () => {
-          return await getData()
-        },
-        errorElement: <div>Server Error</div>
       },
       {
         path: "shop",
