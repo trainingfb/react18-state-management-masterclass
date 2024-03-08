@@ -24,11 +24,11 @@ export default function ShopBlock (props: HomePageData) {
       {/* latest products*/}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         {
-          props?.products?.map(n => {
+          props?.products?.map(p => {
             return (
-              <div key={n.id} className="  ">
-                <div className="font-bold text-2xl mb-6">{n.title}</div>
-                <img src={n.url} alt={n.title} className="rounded-xl"/>
+              <div key={p.id} className="  ">
+                <div className="font-bold text-2xl mb-6">{p.title}</div>
+                <img src={p.url} alt={p.title} className="rounded-xl"/>
               </div>
             )
           })
