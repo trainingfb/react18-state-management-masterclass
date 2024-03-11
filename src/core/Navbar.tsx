@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 export function Navbar () {
 
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-100 sticky top-0 z-50">
       <div className="flex-1">
         {/*NEW*/}
         <NavLink to="/"  className="btn btn-ghost text-xl">
